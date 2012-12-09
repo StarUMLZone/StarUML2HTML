@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ADDINMENU addInID="StarUML2HTML">
+    <BODY>
+        <MAINMENU>
+            <MAINITEM base="TOOLS" caption="html doc generation" availableWhen="PROJECT_OPENED"
+                script="src\StarUML2HTML.js"/>
+        </MAINMENU>
+    </BODY>
+</ADDINMENU>

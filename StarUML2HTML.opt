@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OPTIONSCHEMA id="StarUML2HTML"> 
+    <HEADER>
+		<CAPTION>StarUML2HTML</CAPTION> 
+		<DESCRIPTION>html doc generation &amp; StarUML2HTML options</DESCRIPTION> 
+	</HEADER>
+    <BODY>
+    <OPTIONCATEGORY>
+        <CAPTION>Location</CAPTION>
+        <DESCRIPTION>File location after generation</DESCRIPTION>
+        <OPTIONCLASSIFICATION>
+            <CAPTION>File path</CAPTION>
+            <DESCRIPTION>Choose a default file path</DESCRIPTION>
+             <OPTIONITEM-PATHNAME key="FilePath">
+				<CAPTION>File Path</CAPTION>
+				<DESCRIPTION>File path</DESCRIPTION>
+				<DEFAULTVALUE>.</DEFAULTVALUE>
+			</OPTIONITEM-PATHNAME>
+			
+			<OPTIONITEM-BOOLEAN key="launchBrowserAutomatically">
+				<CAPTION>launch a browser automatically after doc generation</CAPTION>
+				<DESCRIPTION>launch browser automatically</DESCRIPTION>
+				<DEFAULTVALUE>True</DEFAULTVALUE>
+			</OPTIONITEM-BOOLEAN>
+			
+			<OPTIONITEM-BOOLEAN key="indentCode">
+				<CAPTION>Indent correctly the generated html files</CAPTION>
+				<DESCRIPTION>correct indent</DESCRIPTION>
+				<DEFAULTVALUE>True</DEFAULTVALUE>
+			</OPTIONITEM-BOOLEAN>
+        </OPTIONCLASSIFICATION>
+    </OPTIONCATEGORY>
+	</BODY>
+</OPTIONSCHEMA>

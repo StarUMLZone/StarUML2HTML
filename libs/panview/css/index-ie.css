@@ -1,0 +1,22 @@
+.navigatorArea
+{
+	font-size:		0px;
+	line-height:	0px;
+}
+
+.selectionBox
+{
+	font-size:		0px;
+	line-height:	0px;
+}
+
+.zoomContainer
+{
+	/* TODO: Find a way to set the PNG transparent on IE. I thought this code below can help but maybe not.
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src=...); */
+}
+
+.coordinatesValue
+{
+	clear:	both;
+}

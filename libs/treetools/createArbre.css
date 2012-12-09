@@ -1,0 +1,168 @@
+/********************************************************************************
+*              Plugin de création de l'arbre HTML (version 4.1)                 *
+*                                                                               *
+* Auteur : ROLLAND Romain                                                       *
+* Modified by Clément COMTE (add comments)                                      *
+* Date : 24/03/09                                                               *
+*********************************************************************************/
+
+.container{
+	margin-left: 20px;
+	font-size: 12px;
+}
+
+div.mui-tree{
+}
+
+/* Set the mui-tree html list, sublist position and style */
+div.mui-tree ul, div.mui-tree ul ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 1.5em;
+	display: block;
+}
+
+/* Set mui-tree html list padding and margin (positionning) */
+div.mui-tree ul li{
+	padding-left: 3px;
+	margin: 2px 0;
+/*	vertical-align: top;*/
+}
+
+/* Apply the hand cursor to treetitle divs */
+div.mui-treetitle{
+	cursor: pointer;
+/*	vertical-align: middle;*/
+}
+
+/* Update the treetitle icon and margin when collapsed */
+div.mui-treetitle:before{
+	content: url('./img/plus.gif');
+	margin-right: 3px;
+	margin-left: -25px;
+}
+/* Update the treetitle icon and margin when expanded */
+div.mui-treetitle.expanded:before {
+	content: url(./img/moins.gif);
+	margin-right: 3px;
+	margin-left: -25px;
+}
+
+
+/* Apply the hand cursor over treetitle hyperlink */
+a{
+	cursor: pointer;
+	text-decoration: none;
+	font-family: Sans-serif;
+}
+
+
+
+
+/* Model Explorer Model node */
+.UMLModel:before{
+	content: url(./img/model.png);
+	vertical-align: middle;
+}
+/* Model Explorer Project node */
+.Project:before{
+	content: url(./img/project.png);
+	vertical-align: middle;
+}
+/* Model Explorer Package node */
+.UMLPackage:before{
+	content: url(./img/package.png);
+	vertical-align: middle;
+}
+/* Model Explorer Class node */
+.UMLClass:before{
+	content: url(./img/class.png);
+	vertical-align: middle;
+}
+/* Model Explorer Operation leaf */
+.UMLOperation:before{
+	content: url(./img/operation.png);
+	vertical-align: middle;
+}
+/* Model Explorer Attribute leaf */
+.UMLAttribute:before{
+	content: url(./img/attribute.png);
+	vertical-align: middle;
+}
+/* Model Explorer Association leaf */
+.UMLAssociation:before{
+	content: url(./img/association.png);
+	vertical-align: middle;
+}
+/* Model Explorer UseCaseDiagram leaf */
+.UMLUseCaseDiagram:before{
+	content: url(./img/usecasediagram.png);
+	vertical-align: middle;
+}
+/* Model Explorer ClassDiagram leaf */
+.UMLClassDiagram:before{
+	content: url(./img/classdiagram.png);
+	vertical-align: middle;
+}
+/* Model Explorer Component Diagram leaf */
+.UMLComponentDiagram:before{
+	content: url(./img/componentdiagram.png);
+	vertical-align: middle;
+}
+/* Model Explorer CompositeStructureDiagram leaf */
+.UMLCompositeStructureDiagram:before{
+	content: url(./img/compositestructurediagram.png);
+	vertical-align: middle;
+}
+/* Model Explorer DeploymentDiagram leaf */
+.UMLDeploymentDiagram:before{
+	content: url(./img/deploymentdiagram.png);
+	vertical-align: middle;
+}
+/* Model Explorer Artifact leaf */
+.UMLArtifact:before{
+	content: url(./img/artifact.png);
+	vertical-align: middle;
+}
+/* Model Explorer Enumeration node */
+.UMLEnumeration:before{
+	content: url(./img/enum.png);
+	vertical-align: middle;
+}
+/* Model Explorer TemplateParameter leaf */
+.UMLTemplateParameter:before{
+	content: url(./img/tempparameter.png);
+	vertical-align: middle;
+}
+/* Model Explorer Signal node */
+.UMLSignal:before{
+	content: url(./img/signal.png);
+	vertical-align: middle;
+}
+/* Model Explorer Object node */
+.UMLObject:before{
+	content: url(./img/object.png);
+	vertical-align: middle;
+}
+/* Model Explorer Exception node */
+.UMLException:before{
+	content: url(./img/exception.png);
+	vertical-align: middle;
+}
+/* Model Explorer Port node */
+.UMLPort:before{
+	content: url(./img/port.png);
+	vertical-align: middle;
+}
+/* Model Explorer Connector icon */
+.UMLConnector:before{
+	content: url(./img/connector.png);
+	vertical-align: middle;
+}
+/* Model Explorer Subsystem node */
+.UMLSubsystem:before{
+	content: url(./img/subsystem.png);
+	vertical-align: middle;
+}
+

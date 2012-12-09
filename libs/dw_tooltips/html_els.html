@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Demo</title>
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+div#tipDiv {
+    padding:4px;
+    color:#000; font-size:11px; line-height:1.2;
+    background-color:#E1E5F1; border:1px solid #667295; 
+    width:210px; 
+}
+
+/* example demonstrating applying styles to 'tipContent' for tooltip display
+i.e., div.tipContent ul wouldn't work (more info in online documentation) */
+div#tipDiv ul.tipContentList {
+    margin:0; padding:0; list-style:none;
+}
+
+
+</style>
+<script src="js/dw_event.js" type="text/javascript"></script>
+<script src="js/dw_viewport.js" type="text/javascript"></script>
+<script src="js/dw_tooltip.js" type="text/javascript"></script>
+<script src="js/dw_tooltip_aux.js" type="text/javascript"></script>
+<script type="text/javascript">
+dw_Tooltip.defaultProps = {
+    content_source: 'class_id'
+}
+
+// Write style rule that hides elements with tipContent class for capable browsers 
+dw_Tooltip.writeStyleRule();
+
+</script>
+</head>
+<body>
+
+<h1>Page Elements' Content Displayed in Tooltips </h1>
+
+<p>This example demonstrates obtaining tooltip content from HTML elements that exist in the page.  Those elements would be visible for browsers incapable of supporting the code.</p>
+
+<!-- Second class points to ID of the element to display when the link is hovered over  -->
+<p><a href="index.html" class="showTip el">Link 1</a></p>
+<p><a href="index.html" class="showTip el2">Link 2</a></p>
+
+<p>See code comments and <a href="http://www.dyn-web.com/code/tooltips/documentation.php">documentation online</a> for important information about applying styles to the content of HTML elements to be placed in the tooltip. </p>
+
+<p>The tooltip can be <a href="hover_tip.html">Hoverable</a></p>
+
+<p>Back to <a href="index.html">index</a></p>
+
+
+<!-- 
+Assign tipContent class to elements for display in tooltips 
+
+Note: styles attached to class tipContent won't have an effect inside the tooltip!
+See styles in head (for tipContentList) 
+-->
+<div id="el" class="tipContent">
+<ul class="tipContentList">
+    <li>Lots of important stuff</li>
+    <li>More great info ...</li>
+    <li>Whatever you like</li>
+</ul>
+</div>
+
+<p id="el2" class="tipContent">Place what ever you like here. See info online about styling this content.</p>
+
+</body>
+</html>

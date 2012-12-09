@@ -1,0 +1,89 @@
+.imageContainer
+{
+	position: 	relative;
+	float:		left;
+}
+
+.navigatorContainer
+{
+	position:		relative;
+	border:			2px solid blue;
+	float:			left;
+	margin-left:	3px;
+}
+
+.navigatorArea
+{
+	position:			absolute;
+	border:				1px solid red;
+	background-color: 	white;
+}
+
+.zoomContainer
+{
+	position:			relative;
+	float:				left;
+	margin-right:		3px;
+	background-color: 	#bbccff;
+	width:				20px;
+	padding: 			2px;
+	border:				1px solid blue;
+	text-align: 		center;
+}
+
+.zoomFactor
+{
+	font-size: 			8px;
+	text-align: 		center;
+	background-color: 	#ffff99;
+	width: 				18px;
+	margin-bottom: 		3px;
+	padding: 			1px;
+}
+
+.coordinatesContainer
+{
+	border:				1px solid blue;
+	width:				70px;
+	background-color:	#ffff99;
+	position:			absolute;
+	float:				left;
+	clear:				left;
+	margin-left: 		30px;
+	margin-top:			3px;
+	padding: 			3px;
+}
+
+.coordinatesContainerSelection
+{
+	background-color:	#ff3333;
+	border:				1px solid brown;
+}
+.coordinatesName
+{
+	position: 		relative;
+	font-weight: 	bold;
+	float:			left;
+	clear:			both;
+	font-family: 	monospace;
+}
+
+.coordinatesValue
+{
+	position: 		relative;
+	float: 			right;
+	font-family:	monospace;
+}
+
+.selectionContainer
+{
+	position:		relative;
+	border:			2px solid blue;
+	float:			left;
+}
+
+.selectionBox
+{
+	position:		absolute;
+	border:			1px solid red;
+}

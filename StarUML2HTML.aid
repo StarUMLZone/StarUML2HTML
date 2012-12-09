@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <ADDIN>
+    <NAME>StarUML2HTML AddIn</NAME>
+    <DISPLAYNAME>StarUML2HTML</DISPLAYNAME>
+    <ISACTIVE>True</ISACTIVE>
+    <MENUFILE>StarUML2HTML.mnu</MENUFILE>
+    <VERSION>1.9</VERSION>
+</ADDIN>

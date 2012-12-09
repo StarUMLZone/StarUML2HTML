@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Demo </title>
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+
+/* Padding not included here if using sticky close box  */
+div#tipDiv {
+    color:#000; font-size:11px; 
+    background-color:#E1E5F1; border:1px solid #667295; 
+    width:250px; 
+}
+
+/* styles for wrap functions  */
+div#tipDiv .stickyBar {
+    background-color:#0D2878; 
+    }
+    
+div#tipDiv .stickyTitle {
+    padding:0 0 2px 4px; color:#fff; font-size:14px;      
+    }
+div#tipDiv div.stickyContent {
+    padding:4px;
+    }
+/* sticky with closeBox is in table */  
+div#tipDiv td { font-size:11px; }
+
+
+div#tipDiv div.img { text-align:center }
+div#tipDiv div.txt {  }
+</style>
+<script src="js/dw_event.js" type="text/javascript"></script>
+<script src="js/dw_viewport.js" type="text/javascript"></script>
+<script src="js/dw_tooltip.js" type="text/javascript"></script>
+<script src="js/dw_tooltip_aux.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+dw_Tooltip.defaultProps = {
+    sticky: true,
+    showCloseBox: true,
+    closeBoxImage: 'images/close.gif',
+    positionFn: dw_Tooltip.positionWindowCenter
+    
+    // using other wrapFn's for each link (they can all do sticky with close box and caption too)
+    // If all the tooltips use the same wrapFn, specify it here 
+    //wrapFn: dw_Tooltip.wrapSticky (using wrapSticky directly doesn't allow other props like caption, width, etc.)
+}
+
+dw_Tooltip.content_vars = {
+    L1: {
+        str: 'Hello from link 1',
+        w: 120,
+        wrapFn: dw_Tooltip.wrapToWidth
+    }, 
+    L2: {
+        caption: 'A Heron',
+        img: 'images/heron.gif',
+        txt: 'A heron image created from a character font.',
+        wrapFn: dw_Tooltip.wrapTextByImage,
+        w: 210
+    }, 
+    L3: {
+        w: 100,
+        h: 100,
+        img: 'images/heron.gif',
+        wrapFn: dw_Tooltip.wrapImageToWidth
+    }
+}
+
+
+</script>
+</head>
+<body>
+
+
+<h1>Sticky Tooltip</h1>
+
+
+
+<p><a href="index.html" class="showTip L1">link 1</a></p>
+<p><a href="index.html" class="showTip L2">link 2</a></p>
+<p><a href="index.html" class="showTip L3">link 3</a></p>
+
+<p>Sticky Tooltips positioned window center are a good way to present a large images.  </p>
+
+<p>&nbsp;</p>
+<p>Back to <a href="index.html">index</a></p>
+
+</body>
+</html>

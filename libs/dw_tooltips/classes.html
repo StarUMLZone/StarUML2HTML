@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Demo</title>
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+/* 
+ Example use of tooltip with multiple classes  
+ Specifications common to all tooltips applied to div#tipDiv
+ */
+div#tipDiv { 
+    padding:4px;
+    font-size:11px; line-height:1.2;
+}
+
+/*  ie6 can't handle selectors like div#tipDiv.tooltip !   */
+
+div.tooltip { 
+    background-color:#E1E5F1; border:1px solid #667295; 
+    width:250px; 
+    }
+    
+div.tip2 {
+    background-color:#000080; border:1px solid #eee; 
+    width:150px; color:white;
+    }
+</style>
+<script src="js/dw_event.js" type="text/javascript"></script>
+<script src="js/dw_viewport.js" type="text/javascript"></script>
+<script src="js/dw_tooltip.js" type="text/javascript"></script>
+<script src="js/dw_tooltip_aux.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+dw_Tooltip.defaultProps = {
+    klass: 'tooltip'
+}
+
+
+dw_Tooltip.content_vars = {
+    // When using the default class you can just assign a string for the content 
+    L1: "Content for link 1 which uses default class (view source of page and documentation online.)",
+    
+    // When you want to use a class other than the default, assign the content to the content property as shown below 
+    L2: {
+        content: 'Content for link 2, which uses a different class',
+        klass: 'tip2'
+    }
+}
+</script>
+</head>
+<body>
+
+<h1>Multiple Classes for Tooltips</h1>
+
+<p>You can have multiple classes set up to control the display of the tooltip as this page demonstrates.  </p>
+
+<p><a href="index.html" class="showTip L1">link 1</a></p>
+<p><a href="index.html" class="showTip L2">link 2</a></p>
+
+<p>Back to <a href="index.html">index</a></p>
+
+</body>
+</html>
